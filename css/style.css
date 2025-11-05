@@ -5,27 +5,31 @@
 }
 
 @font-face {
-  font-family: 'ZenSerif';
-  src: url('ZEN-SERIF-TTF-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ZenSerif';
+    src: url('ZEN-SERIF-TTF-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-  font-family: 'ZenSerif', Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #e9e9e9; /* Fondo gris-azulado claro */
-  color: #000000; /* Gris oscuro para texto */
-  line-height: 1.6;
+    font-family: 'ZenSerif', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e9e9e9;
+    /* Fondo gris-azulado claro */
+    color: #000000;
+    /* Gris oscuro para texto */
+    line-height: 1.6;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 .navbar {
-    background-color: #004AAD; /* Azul claro */
+    background-color: #004AAD;
+    /* Azul claro */
     padding: 1rem 0;
     box-shadow: 0 2px;
     margin-bottom: 2rem;
@@ -42,20 +46,24 @@ body {
     gap: 30rem;
 }
 
-.menu a{ 
-    color: rgb(255, 255, 255); 
-    text-decoration: none; 
-    font-weight: 500; 
-    transition: color 0.3s; }
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
 
 .menu a:hover,
 .menu a.active {
-    color: #0068f0; /* Azul profesional */
+    color: #0068f0;
+    
+    /* Azul profesional */
 }
 
 .hero {
-    background: linear-gradient(135deg, #024dbe 10%, #4087f1 100%); /* Degradado azul profesional */
-    color: #ffffff; 
+    background: linear-gradient(135deg, #024dbe 10%, #4087f1 100%);
+    /* Degradado azul profesional */
+    color: #ffffff;
     padding: 2rem 0;
     text-align: center;
 }
@@ -68,6 +76,7 @@ body {
 .hero p {
     font-size: 1.2rem;
     opacity: 0.95;
+    
 }
 
 .credits-section h3 {
@@ -76,8 +85,9 @@ body {
 
 .credits-section h3 {
     font-size: 2rem;
-    color: #1C1C1C;
+    color: #000000;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .credits-grid {
@@ -88,11 +98,13 @@ body {
 }
 
 .credit-card {
-  background: #F6F7FB; /* Blanco azulado */
-  border-radius: 12;
-  padding: 1.5rem;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+    background: #F6F7FB;
+    /* Blanco azulado */
+    border-radius: 12;
+    padding: 1.5rem;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
 }
 
 .credit-card:hover {
@@ -115,45 +127,53 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #C2C7D0; /* Gris azulado claro */
+    border-bottom: 1px solid #C2C7D0;
+    /* Gris azulado claro */
 }
 
 .btn-primaryy {
-  display: inline-block;
-  background-color: #004AAD;   /* Azul confianza */
-  color: white;
-  font-weight: bold;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    background-color: #004AAD;
+    /* Azul confianza */
+    color: white;
+    font-weight: bold;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem; /* espacio entre imagen y texto */
-  color: rgb(255, 253, 253);
-  font-size: 1.5rem;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    /* espacio entre imagen y texto */
+    color: rgb(255, 253, 253);
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .logo-img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain; /* ajusta la imagen sin deformarla */
-  border-radius: 8px;  /* opcional: esquinas redondeadas */
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    /* ajusta la imagen sin deformarla */
+    border-radius: 8px;
+    /* opcional: esquinas redondeadas */
 }
+
 .logo-img {
-  background: transparent;
-  border-radius: 0;
-  filter: drop-shadow(0 0 3px rgba(255,255,255,0.8)); /* luce más limpio */
+    background: transparent;
+    border-radius: 0;
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+    /* luce más limpio */
 }
 
 .btn-primaryy:hover {
     transform: translateY(-3px);
-  
+
 }
