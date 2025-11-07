@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Crédito - CredySmartJDL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="container_CS">
+        <img src="css/img/IMG.png" alt="CredySmartJDL" class="logo-img"> CredySmartJDL
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" color="red" href="index.html">inicio</a>
+        <li class="nav-busqueda"></li>
+        <a class="nav-link" aria-current="page" href="Busqueda.html">Busqueda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" color="red" href="Solicitud.html">Solicitar crédito</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+  <main class="container">
+    <!-- SECCIÓN DE BÚSQUEDA -->
+    <section class="search-section">
+      <h2 class="search-title">Buscar Crédito</h2>
+      <div class="search-container">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="searchName">Buscar por nombre:</label>
+            <input type="text" id="searchName" placeholder="Ej: Crédito Vehículo" />
+          </div>
+
+          <div class="form-group">
+            <label for="amountRange">Rango de monto:</label>
+            <select id="amountRange">
+              <option value="">Todos los montos</option>
+              <option value="1M-10M">$1M - $10M</option>
+              <option value="10M-30M">$10M - $30M</option>
+              <option value="30M-80M">$30M - $80M</option>
+              <option value="80M+">$80M+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="interestRate">Tasa de interés:</label>
+            <select id="interestRate">
+              <option value="">Todas las tasas</option>
+              <option value="0.5">0.5% mensual</option>
+              <option value="1.0">1.0% mensual</option>
+              <option value="1.5">1.5% mensual</option>
+              <option value="1.8">1.8% mensual</option>
+              <option value="1.9">1.9% mensual</option>
+              <option value="2.0">2.0% mensual</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Botones: Limpiar + Buscar -->
+        <div class="search-buttons">
+          <button class="btn-clear">Limpiar Filtros</button>
+          <button class="btn-search">Buscar Crédito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="credits-section">
+      <h3>Resultados de la búsqueda</h3>
+      <div class="credits-grid" id="results">
+        <!-- Las tarjetas se mostrarán aquí (puedes dejar unas de ejemplo) -->
+        <div class="credit-card">
+          <div class="card-header">
+            <h4>🚗 Crédito de Vehículos</h4>
+          </div>
+          <p>Financia tu auto soñado con cuotas que caben en tu bolsillo.</p>
+          <div class="details">
+            <div class="datail-item">
+              <span class="label">Tasa de interés</span>
+              <span class="value highlight">2.0% mensual</span>
+            </div>
+            <div class="datail-item">
+              <span class="label">Monto</span>
+              <span class="value">$10M - $80M</span>
+            </div>
+            <div class="datail-item">
+              <span class="label">Plazo</span>
+              <span class="value">Hasta 70 meses</span>
+            </div>
+          </div>
+          <button class="btn-primaryy">Solicita tu crédito ahora!</button>
+        </div>
+
+        <div class="credit-card">
+          <div class="card-header">
+            <h4>💰Credito de libre invercion</h4>
+          </div>
+          <p> Dinero rápido para lo que necesites, sin explicaciones. </p>
+          <div class="details">
+            <div class="datail-item">
+              <span class="label">Tasa de interes</span>
+              <span class="value highlight">1.5% mensual</span>
+            </div>
+            <div class="datail-item">
+              <span class="label">Monto</span>
+              <span class="value">$2M - $30M</span>
+            </div>
+            <div class="datail-item">
+              <span class="label">Plazo</span>
+              <span class="value">Hasta 60 meses</span>
+            </div>
+          </div>
+          <button class=" btn-primaryy">Solicita tu credito ahora!</button>
+        </div>
+
+        <!-- Puedes agregar más o dejar vacío y llenarlo con JS luego -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (igual que index.html) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="css/img/IMG.png" alt="CredySmartJDL" class="logo-img">
+        </div>
+        <div class="footer-copyright">
+          <p>© 2025 CredySmartJDL. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
