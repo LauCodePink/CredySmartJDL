@@ -171,16 +171,12 @@ body {
 
 .btn-clear {
     padding: 0.45rem 0.9rem;
-    /* antes: 0.6rem 1rem */
     background: none;
     border: 1.3px solid #204558;
-    /* antes: 1.5px — ligeramente más delgado */
     color: #000000;
     font-weight: bold;
     font-size: 0.875rem;
-    /* antes: valor por defecto (~1rem) → ahora ~14px */
     border-radius: 18px;
-    /* antes: 20px */
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -189,47 +185,122 @@ body {
     background-color: rgba(51, 107, 135, 0.4);
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER  ===== */
+.footer {
+    background-color: #3e4b4d;
+    color: #e0e0e0;
+    padding: 2.5rem 0 1.2rem;
+    margin-top: 10rem;
+    font-family: 'ZenSerif', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 0;
-    border-top: 1px solid #010000;
-    color: #2A3132;
-    background-color: #b0c2cc;
+    gap: 2.5rem;
+    flex-wrap: wrap;
 }
 
-.footer-logo .logo-img {
-    width: 80px;
+.footer-info {
+    flex: 2;
+    min-width: 280px;
 }
 
-.footer-copyright {
-    color: #010000;
-    font-size: 1rem;
+.footer-logo {
+    width: 100px;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.footer-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: #fcf8f7;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    font-size: 0.95rem;
+    margin: 0.4rem 0;
+    color: #cccccc;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid #444;
     text-align: center;
+    color: #dadada;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-contact {
+        min-width: 100%;
+    }
 }
 
 /* ===== FORMULARIOS ===== */
 .form-container {
     background: #FFFFFF;
     padding: 1rem;
-    /* antes: 1.5rem */
     border-radius: 8px;
-    /* antes: 10px */
     box-shadow: 0 1px 6px rgba(42, 49, 50, 0.06);
-    /* sombra más suave */
     margin-bottom: 1.5rem;
-    /* antes: 2rem */
     border: 1px solid #E0E0E0;
 }
 
 .form-section h3 {
     font-size: 1.1rem;
-    /* antes: 1.2rem */
     color: #2A3132;
     margin-bottom: 0.75rem;
-    /* antes: 1rem */
     border-bottom: 1px solid #C0C0C0;
     font-weight: 600;
 }
@@ -261,10 +332,8 @@ body {
 .form-row {
     display: flex;
     gap: 0.75rem;
-    /* antes: 1rem */
     flex-wrap: wrap;
     margin-bottom: 0.75rem;
-    /* antes: 1rem */
 }
 
 .form-title {
@@ -278,19 +347,15 @@ body {
 .form-group {
     flex: 1;
     min-width: 180px;
-    /* antes: 220px → más adaptable en pantallas pequeñas */
     margin-bottom: 0.75rem;
-    /* antes: 1rem */
 }
 
 .form-group label {
     display: block;
     margin-bottom: 0.3rem;
-    /* antes: 0.4rem */
     font-weight: 600;
     color: #2A3132;
     font-size: 0.875rem;
-    /* ligeramente más pequeño */
 }
 
 .form-group input,
@@ -298,12 +363,9 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 0.6rem;
-    /* antes: 0.8rem */
     border: 1px solid #C0C0C0;
     border-radius: 6px;
-    /* antes: 8px */
     font-size: 0.875rem;
-    /* antes: 1rem → ~14px en lugar de 16px */
     background: #FFFFFF;
     font-weight: 500;
     transition: border-color 0.25s, box-shadow 0.25s;
@@ -315,7 +377,6 @@ body {
     outline: none;
     border-color: #336B87;
     box-shadow: 0 0 0 2px rgba(51, 107, 135, 0.12);
-    /* ligeramente más tenue */
 }
 
 .info-box {

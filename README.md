@@ -54,7 +54,7 @@ credysmartjdl/
 ###  Capturas de pantalla
 
 ####  Página principal (index.html)
-![Página de inicio - Catálogo de créditos](css\img\image.png)
+![Página de inicio - Catálogo de créditos](css\img\image1.png)
 
 ####  Página de búsqueda (Simulador.html)
 ![Página de búsqueda con filtros](css\img\image2.png)
